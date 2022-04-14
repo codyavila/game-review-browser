@@ -12,4 +12,7 @@ $(() => {
   $('.sign-out').on('click', authEvents.onSignOut)
   // game review events
   $('#create-game-review-form').on('submit', gameEvents.onGameCreate)
+  $('#game-index').on('click', gameEvents.onGameIndex)
+  $('#show-game-review-form').on('submit', gameEvents.onGameShow)
+  $('#delete-game-review-form').on('submit', gameEvents.onGameDelete)
 })
