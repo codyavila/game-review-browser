@@ -49,9 +49,22 @@ const gameDelete = function (id) {
     }
   })
 }
+
+// Update Game Review
+const gameUpdate = function (id, data) {
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/game/' + id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    data
+  })
+}
 module.exports = {
   gameCreate,
   gameIndex,
   gameShow,
-  gameDelete
+  gameDelete,
+  gameUpdate
 }

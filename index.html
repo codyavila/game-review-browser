@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Game Review</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,7 +12,9 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>GR1</h1>
+      <h3>A Place To Keep Reviews For Your Games!</h3>
+
       <!--Sign Up-->
       <h3>Sign Up!</h3>
       <form id="sign-up-form">
@@ -21,6 +23,7 @@
         <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
         <button type="submit">Sign Up</button>
       </form>
+
       <!--Sign In-->
       <form id="sign-in-form">
         <h3>Sign In</h3>
@@ -28,36 +31,61 @@
         <input name="credentials[password]" type="password" placeholder="Password">
         <button type="submit">Sign In</button>
       </form>
+
+      <!--Change Password-->
+        <form id="change-password-form">
+          <input name="passwords[old]" type="password" placeholder="Old Password">
+          <input name="passwords[new]" type="password" placeholder="New Password">
+          <button type="submit">Update</button>
+        </form>
+
       <!--Div for Auth Messages-->
       <section id="auth-display"></section>
+
       <!--Sign Out-->
       <h3 class="sign-out">Sign Out</h3>
-      <button class="sign-out">Sign Out</button>
+      <button class="sign-out" id="sign-out">Sign Out</button>
 
-      <h1>Game Reviews</h1>
+      <h4 class="all-game-review">Your Reviews</h4>
+
       <!--Create New Review-->
-      <form id="create-game-review-form">
+      <form class="all-game-review" id="create-game-review-form">
         <h3>Create Game Review</h3>
         <input name= "game[title]" type="text" placeholder="Game Title">
         <input name="game[description]" type="text" placeholder="Add a Description (optional)" size="40">
         <input name="game[rating]" type="text" placeholder="Enter a Number Rating" size="19">
         <button type="submit">Submit</button>
       </form>
+
       <!--Div for Game Messages-->
-      <section id="game-display"></section>
+      <section class="all-game-review" id="game-display"></section>
+
       <!--Button for Indexing Game Reviews-->
-      <button id="game-index">Show All Reviews</button>
+      <button class="all-game-review" id="game-index">Show All Reviews</button>
+
       <!--Button for Showing one Game Review-->
-      <form id="show-game-review-form">
+      <form class="all-game-review" id="show-game-review-form">
         <input name="game[id]" type="text" placeholder="Enter Review ID">
         <button id="game-show">Show One Review</button>
       </form>
-      <!--Form For Deleting Review-->
-      <form id="delete-game-review-form">
-        <input name="game[id]" type="text" placeholder="Enter Review ID">
-        <button id="game-delete">Delete review</button>
-      </form>
 
+      <!--Form For Deleting Review-->
+      <!-- <form id="delete-game-review-form">
+        <input name="game[id]" type="text" placeholder="Enter Review ID">
+        <button id="game-delete">Delete Review</button>
+      </form> -->
+
+      <!--Form For Updating Review-->
+      <!-- <form id="update-game-review-form">
+        <input name="game[id]" type="text" placeholder="Game ID">
+        <input name="game[title]" type="text" placeholder="Game Title">
+        <input name="game[description]" type="text" placeholder="Add a Description (optional)" size="40">
+        <input name="game[rating]" type="text" placeholder="Enter a Number Rating" size="19">
+        <button type="submit">Edit</button>
+      </form> -->
+
+      <!--Section For mongoDb -->
+      <section class="all-game-review" id="game-reviews"></section>
 
     </body>
 </html>

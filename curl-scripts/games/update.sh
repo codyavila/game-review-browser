@@ -9,8 +9,10 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Content-Type: application/json" \
 --header "Authorization: Bearer ${TOKEN}" \
 --data '{
-    "example": {
-      "text": "'"${TEXT}"'"
+    "game": {
+      "title": "'"${TITLE}"'",
+      "description": "'"${DESCRIPTION}"'",
+      "rating": "'"${RATING}"'"
     }
   }'
 

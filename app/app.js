@@ -7,12 +7,19 @@ const gameEvents = require('./game-review/events.js')
 
 $(() => {
   // auth events
+  $('.sign-out').hide()
+  $('#change-password-form').hide()
   $('#sign-up-form').on('submit', authEvents.onSignUp)
   $('#sign-in-form').on('submit', authEvents.onSignIn)
-  $('.sign-out').on('click', authEvents.onSignOut)
+  $('#sign-out').on('click', authEvents.onSignOut)
+  $('#change-password-form').on('submit', authEvents.onChangePassword)
   // game review events
+  $('.all-game-review').hide()
   $('#create-game-review-form').on('submit', gameEvents.onGameCreate)
   $('#game-index').on('click', gameEvents.onGameIndex)
   $('#show-game-review-form').on('submit', gameEvents.onGameShow)
   $('#delete-game-review-form').on('submit', gameEvents.onGameDelete)
+  $('#update-game-review-form').on('submit', gameEvents.onGameUpdate)
+  $('#game-reviews').on('click', '.game-destroy-dynamic', gameEvents.onDynamicDestroyGame)
+  $('#game-reviews').on('submit', '.game-update-dynamic', gameEvents.onDynamicUpdateGame)
 })
