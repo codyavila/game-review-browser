@@ -47,7 +47,6 @@ const onIndexFailure = function () {
 }
 
 const onGameShowSuccess = function (response) {
-
   $('#game-reviews').html(`
         <h4>Title: ${response.game.title}</h4>
         <p>Description: ${response.game.description}</p>
