@@ -18,6 +18,9 @@ const onSignInSuccess = function (response) {
 
   // reset all forms
   $('form').trigger('reset')
+
+  $('.logged-in').show()
+  $('.logged-out').hide()
   $('.all-game-review').show()
   $('#change-password-form').show()
 
@@ -40,6 +43,8 @@ const onSignOutSuccess = function () {
   $('.all-game-review').hide()
   $('.sign-out').hide()
   $('#change-password-form').hide()
+  $('.logged-out').show()
+  $('.logged-in').hide()
 }
 
 const onSignOutFailure = function () {
