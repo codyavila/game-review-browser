@@ -9,7 +9,7 @@ const onSignUp = function (event) {
   // getting data from form
   const form = event.target
   const data = getFormFields(form)
-  console.log(data)
+  // console.log(data)
 
   authApi
     .signUp(data)
@@ -20,7 +20,7 @@ const onSignIn = function (event) {
   event.preventDefault()
   const form = event.target
   const data = getFormFields(form)
-  console.log(data)
+  // console.log(data)
 
   authApi
     .signIn(data)
@@ -40,7 +40,7 @@ const onChangePassword = function (event) {
   // getting data from form
   const form = event.target
   const data = getFormFields(form)
-  console.log(data)
+  // console.log(data)
 
   authApi
     .changePassword(data)

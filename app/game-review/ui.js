@@ -30,7 +30,7 @@ const onIndexSuccess = function (response) {
         <input type="text" name="game[rating]" placeholder="Number Rating Here">
         <button type="submit">Update Review</button>
         </form>
-      <button class='game-destroy-dynamic' data-id=${game._id}>Delete Review</button>
+
       <br>
     `
   })
@@ -39,7 +39,7 @@ const onIndexSuccess = function (response) {
   $('#game-display').html('<p>Success</p>')
   $('form').trigger('reset')
 
-  console.log(response)
+  // console.log(response)
 }
 
 const onIndexFailure = function () {
@@ -59,12 +59,13 @@ const onGameShowSuccess = function (response) {
         <button type="submit">Update Review</button>
         </form>
       <button class='game-destroy-dynamic' data-id=${response.game._id}>Delete Review</button>
+      
       <br>`)
 
   $('#game-display').html('<p>Success</p>')
   $('form').trigger('reset')
 
-  console.log(response)
+// console.log(response)
 }
 
 const onGameShowFailure = function () {

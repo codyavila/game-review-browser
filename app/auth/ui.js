@@ -2,7 +2,7 @@
 
 const store = require('../store.js')
 
-const onSignUpSuccess = function () {
+const onSignUpSuccess = function (response) {
   $('#auth-display').html('<p>User signed up successfully</p>')
 
   $('form').trigger('reset')
@@ -14,7 +14,8 @@ const onSignUpFailure = function () {
 
 const onSignInSuccess = function (response) {
   $('.sign-out').show()
-  $('#auth-display').html('<p>User signed in successfully</p>')
+  // $('#auth-display').html('<p>User signed in successfully</p>')
+  $('#auth-display').html(`<p>Hello, ${response.user.email}</p>`)
 
   // reset all forms
   $('form').trigger('reset')

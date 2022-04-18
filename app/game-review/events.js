@@ -9,7 +9,7 @@ const onGameCreate = function (event) {
   // getting data from form
   const form = event.target
   const data = getFormFields(form)
-  console.log(data)
+  // console.log(data)
 
   gameApi.gameCreate(data)
     .then(() => gameUi.onGameCreateSuccess())
