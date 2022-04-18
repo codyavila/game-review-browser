@@ -2,9 +2,7 @@
 
 This website allows you to create an account and create reviews on your account that can also be edited or deleted.
 
-## Installation
-
-*User Stories:
+## User Stories:
 
 - As a user, I want to be able to sign up, and sign in
 - As a user, I want to be able to sign out and change password after signing in
@@ -14,6 +12,14 @@ This website allows you to create an account and create reviews on your account 
 - As a user, I don't want to see inputs or buttons I no longer need
 - As a user, I want see games I have already reviewed
 
+## Technologies Used:
+
+- jQuery
+- AJAX
+- HTTP
+- HTML
+- CSS
+- JavaScript
 
 ## Wire Frame
 
