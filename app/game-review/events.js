@@ -56,25 +56,6 @@ const onGameUpdate = function (event) {
     .catch(gameUi.onGameUpdateFailure)
 }
 
-// const onDynamicShowGame = function (event) {
-//   event.preventDefault()
-
-//   // event.target is the delete button that was clicked on
-//   const showButton = event.target
-
-//   // Extract the id from the delete button that was clicked on's data-id attribute
-//   const gameId = $(showButton).data('id')
-
-//   // make API call for deleting one book with the data we grabbed from the form
-//   gameApi.gameShow(gameId)
-
-//   // if the API call is successful then invoke the onDetroySuccess function
-//     .then(gameUi.onGameShowSuccess)
-
-//   // if the API call fails then run our onError function
-//     .catch(gameUi.onGameShowFailure)
-// }
-
 // Handle clicking the dynamic destroy buttons
 const onDynamicDestroyGame = function (event) {
   // event.target is the delete button that was clicked on

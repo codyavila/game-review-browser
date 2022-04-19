@@ -21,14 +21,6 @@ $(() => {
   $('#show-game-review-form').on('submit', gameEvents.onGameShow)
   $('#delete-game-review-form').on('submit', gameEvents.onGameDelete)
   $('#update-game-review-form').on('submit', gameEvents.onGameUpdate)
-  $('#game-reviews').on(
-    'click',
-    '.game-destroy-dynamic',
-    gameEvents.onDynamicDestroyGame
-  )
-  $('#game-reviews').on(
-    'submit',
-    '.game-update-dynamic',
-    gameEvents.onDynamicUpdateGame
-  )
+  $('#game-reviews').on('click', '.game-destroy-dynamic', gameEvents.onDynamicDestroyGame)
+  $('#game-reviews').on('submit', '.game-update-dynamic', gameEvents.onDynamicUpdateGame)
 })

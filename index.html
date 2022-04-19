@@ -15,11 +15,11 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <section class="blue">
+      
       <h1>GR1</h1>
       <h3>A Place To Keep Reviews For Your Games!</h3>
       <div class="curve"></div>
-      </section>
+     
 
       <!--Div for Auth Messages-->
         <section id="auth-display"></section>
@@ -28,7 +28,7 @@
         <section class="all-game-review" id="game-display"></section>
 
       <!--Sign Up-->
-      <section>
+    
 
       <form class="logged-out" id="sign-up-form">
         <input name="credentials[email]" type="email" placeholder="mail@email.com">
@@ -36,41 +36,41 @@
         <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
         <button type="submit">Sign Up</button>
       </form>
-      </section>
+   
 
       <!--Sign In-->
-      <section>
+   
     
       <form class="logged-out" id="sign-in-form">       
         <input name="credentials[email]" type="email" placeholder="mail@email.com">
         <input name="credentials[password]" type="password" placeholder="Password">
         <button type="submit">Sign In</button>
       </form>
-      </section>
+    
 
       <!--Change Password-->
-      <header>
+   
         <h4 class="logged-in">Change Password</h4>
           <form class="logged-in" id="change-password-form">
             <input name="passwords[old]" type="password" placeholder="Old Password">
             <input name="passwords[new]" type="password" placeholder="New Password">
             <button type="submit">Update</button>
           </form>
-        </header>
+     
 
 
       <!--Sign Out-->
-      <section>
+     
       <h3 class="sign-out">Sign Out</h3>
       <button class="sign-out" id="sign-out">Sign Out</button>
-      </section>
+ 
 
-      <section>
+ 
       <h4 class="all-game-review">Your Reviews</h4>
-      </section>
+  
 
       <!--Create New Review-->
-      <section>
+  
       <form class="all-game-review" id="create-game-review-form">
         <h3>Create Game Review</h3>
         <input name= "game[title]" type="text" placeholder="Game Title">
@@ -78,14 +78,14 @@
         <input name="game[rating]" type="text" placeholder="Enter a Number Rating" size="19">
         <button type="submit">Submit</button>
       </form>
-      </section>
+     
 
 
 
       <!--Button for Indexing Game Reviews-->
-      <section>
+  
       <button class="all-game-review" id="game-index">Show All Reviews</button>
-      </section>
+    
 
       <!--Button for Showing one Game Review-->
       <section>
@@ -93,7 +93,7 @@
         <input name="game[id]" type="text" placeholder="Enter Review ID">
         <button id="game-show">Show One Review</button>
       </form>
-      </section>
+ 
 
       <!--Form For Deleting Review-->
       <!-- <form id="delete-game-review-form">

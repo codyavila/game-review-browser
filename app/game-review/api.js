@@ -29,7 +29,7 @@ const gameIndex = function (data) {
 
 // Show One Game Review
 const gameShow = function (id) {
-  console.log(store)
+//  console.log(store)
   return $.ajax({
     method: 'GET',
     url: config.apiUrl + '/game/' + id,

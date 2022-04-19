@@ -30,7 +30,7 @@ const onIndexSuccess = function (response) {
         <input type="text" name="game[rating]" placeholder="Number Rating Here">
         <button type="submit">Update Review</button>
         </form>
-
+        <button class='game-destroy-dynamic' data-id=${game._id}>Delete Review</button>
       <br>
     `
   })
