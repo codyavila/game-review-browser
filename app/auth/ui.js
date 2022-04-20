@@ -52,11 +52,21 @@ const onSignOutFailure = function () {
   $('#auth-display').html('<p>Error while signing out</p>')
 }
 
+const onChangePasswordSuccess = function () {
+  $('#auth-display').html('<p>Changed Password Successfully</p>')
+}
+
+const onChangePasswordFailure = function () {
+  $('#auth-display').html('<p>Error While Changing Password</p>')
+}
+
 module.exports = {
   onSignInSuccess,
   onSignInFailure,
   onSignUpFailure,
   onSignUpSuccess,
   onSignOutSuccess,
-  onSignOutFailure
+  onSignOutFailure,
+  onChangePasswordSuccess,
+  onChangePasswordFailure
 }
