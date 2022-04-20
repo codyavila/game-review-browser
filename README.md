@@ -33,6 +33,7 @@ https://sanderscody26.github.io/game-review-browser/
 
 ## GitHub Links:
 Front-end: https://github.com/sanderscody26/game-review-browser
+
 Back-end: https://github.com/sanderscody26/game-review-api
 
 ## Wire Frame
